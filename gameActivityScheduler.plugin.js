@@ -2,7 +2,7 @@
  * @name gameActivityScheduler
  * @author soapyboat
  * @authorId 219534600135770113
- * @description Describe the basic functions. Maybe a support server link.
+ * @description Sets the user's game activity based on a pre-defined window of time
  * @version 0.0.1
  */
 
@@ -28,9 +28,6 @@ module.exports = class gameActivityScheduler {
     }
 
     setGameActivityVisibility(enable) {
-        const UserSettings = BdApi.findModuleByProps("updateRemoteSettings");
-        console.log(UserSettingsProtoStore.settings.status.showCurrentGame.value);
-        UserSettingsProtoStore.settings.status.showCurrentGame.value = false;
         console.log(UserSettingsProtoStore.settings.status.showCurrentGame.value);
     }
 };
